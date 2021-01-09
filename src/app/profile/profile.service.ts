@@ -13,6 +13,95 @@ export class ProfileService {
     private http: HttpClient
   ) { }
 
+  contactData: any = [
+    {
+      'id': '1',
+      'skill': 'ANGULAR 6',
+      'progress': '85%'
+    },
+    {
+      'id': '2',
+      'skill': 'PHP\/CODEIGNITER',
+      'progress': '80%'
+    },
+    {
+      'id': '3',
+      'skill': 'C++',
+      'progress': '80%'
+    },
+    {
+      'id': '4',
+      'skill': 'PYTHON',
+      'progress': '75%'
+    },
+    {
+      'id': '5',
+      'skill': 'ADOBE ILLUSTRATOR',
+      'progress': '75%'
+    },
+    {
+      'id': '6',
+      'skill': 'DATA STRUCTURE',
+      'progress': '70%'
+    }
+  ];
+
+  skillsData: any = [
+    {
+      'id': '1',
+      'skill': 'ANGULAR 6',
+      'progress': '85%'
+    },
+    {
+      'id': '2',
+      'skill': 'PHP\/CODEIGNITER',
+      'progress': '80%'
+    },
+    {
+      'id': '3',
+      'skill': 'C++',
+      'progress': '80%'
+    },
+    {
+      'id': '4',
+      'skill': 'PYTHON',
+      'progress': '75%'
+    },
+    {
+      'id': '5',
+      'skill': 'ADOBE ILLUSTRATOR',
+      'progress': '75%'
+    },
+    {
+      'id': '6',
+      'skill': 'DATA STRUCTURE',
+      'progress': '70%'
+    }
+  ];
+
+  educationData: any = [
+    {
+      'id': '1',
+      'from_to_year': '2016 - 2020',
+      'education': 'Bachelor\'s Degree',
+      'stream': 'Bachelor of Engineering',
+      'institution': 'MADHAV INSTITUTE OF TECHNOLOGY AND SCIENCE, GWALIOR'
+    },
+    {
+      'id': '2',
+      'from_to_year': '2014 - 2015',
+      'education': 'Higher Secondary',
+      'stream': 'Science and Mathematics',
+      'institution': 'GOVT. BOYS H.S. SCHOOL, DHAMNOD, DHAR'
+    },
+    {
+      'id': '3',
+      'from_to_year': '2012 - 2013',
+      'education': 'High School',
+      'stream': 'Science and Mathematics',
+      'institution': 'SARSWATI SHISHU VIDHYA MANDIR, DHAMNOD, DHAR'
+    }
+  ];
   skillsData: any = [
     {
       'id': '1',
@@ -98,9 +187,10 @@ export class ProfileService {
       'details': 'Developed the Official Website of the <strong>MITSVAH Literary Fest<\/strong>\r\nUnder <strong>Querencia CLUB<\/strong>.'
     }
   ];
-  // contactus(data: any): Observable<any> {
-  //   return this.http.post(this.baseUrl + 'contact', data);
-  // }
+   contactus(data: any): Observable<any> {
+    //return this.http.post(this.baseUrl + 'contact', data);
+     return this.contactData;
+   }
 
   skills(): Observable<any> {
     // return this.http.get(this.baseUrl + 'skills');
